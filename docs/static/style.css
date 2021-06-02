@@ -1,0 +1,132 @@
+
+.middle {
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+.index-middle {
+    max-width: 50%;
+    position: absolute;
+    align-items: center;
+    top: 30%;
+    left: 40%;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+
+.pem {
+  font-family: "Courier";
+  font-size: 10px;
+  padding: 0px;
+}
+.drop-zone {
+  max-width: 200px;
+  height: 200px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+  color: #cccccc;
+  border: 4px dashed #009578;
+  border-radius: 10px;
+}
+
+.drop-zone--over {
+  border-style: solid;
+}
+
+.drop-zone__input {
+  display: none;
+}
+
+.invisible {
+  display: none;
+}
+.visible {
+  display: block;
+}
+
+.sig-display {
+  max-width: 300px;
+  top-padding: 25px;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  x-font-size: 20px;
+  cursor: pointer;
+  color: #cccccc;
+  x-border: 4px dashed #009578;
+  x-border-radius: 10px;
+}
+.sig-content {
+  padding: 5px;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+  font-family: "Courier", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  cursor: pointer;
+  border: 1px solid black;
+  max-height: 250px;
+  min-height: 250px;
+}
+
+.vc-display {
+  max-width: 300px;
+  x-padding: 25px;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  x-font-size: 20px;
+  x-cursor: pointer;
+  color: #cccccc;
+  x-border: 4px dashed #009578;
+  x-border-radius: 10px;
+}
+.vc-content {
+  padding: 5px;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+  font-family: "Courier", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  cursor: pointer;
+  border: 1px solid black;
+  min-height: 250px;
+}
+
+.drop-zone__thumb {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #cccccc;
+  background-size: cover;
+  position: relative;
+}
+
+.drop-zone__thumb::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.75);
+  font-size: 14px;
+  text-align: center;
+}
